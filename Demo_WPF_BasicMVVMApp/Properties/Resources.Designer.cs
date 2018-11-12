@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace Demo_WPF_RoutedCommands.Properties
+namespace Demo_WPF_BasicMVVMApp.Properties
 {
 
 
@@ -44,7 +44,7 @@ namespace Demo_WPF_RoutedCommands.Properties
             {
                 if ((resourceMan == null))
                 {
-                    global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("Demo_WPF_MVVMExamples.Properties.Resources", typeof(Resources).Assembly);
+                    global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("Demo_WPF_BasicMVVMApp.Properties.Resources", typeof(Resources).Assembly);
                     resourceMan = temp;
                 }
                 return resourceMan;

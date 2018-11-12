@@ -6,7 +6,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using System.Windows;
 
-namespace Demo_WPF_RoutedCommands
+namespace Demo_WPF_BasicMVVMApp
 {
     /// <summary>
     /// Interaction logic for App.xaml

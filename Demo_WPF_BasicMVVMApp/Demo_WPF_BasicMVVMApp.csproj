@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{606F01E4-40EE-492C-A980-374238E670A0}</ProjectGuid>
+    <ProjectGuid>{7132B2F0-89C8-4ACB-8DF2-AE4ED060619A}</ProjectGuid>
     <OutputType>WinExe</OutputType>
-    <RootNamespace>Demo_WPF_MVVMExamples</RootNamespace>
-    <AssemblyName>Demo_WPF_MVVMExamples</AssemblyName>
+    <RootNamespace>Demo_WPF_BasicMVVMApp</RootNamespace>
+    <AssemblyName>Demo_WPF_BasicMVVMApp</AssemblyName>
     <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <ProjectTypeGuids>{60dc8134-eba5-43b8-bcc9-bb4bc16c2548};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
@@ -62,7 +62,8 @@
       <DependentUpon>App.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Commands.cs" />
+    <Compile Include="Commands\OpenImageFileCommand.cs" />
+    <Compile Include="Commands\ZoomCommand.cs" />
     <Compile Include="ImageData.cs" />
     <Compile Include="MainWindow.xaml.cs">
       <DependentUpon>MainWindow.xaml</DependentUpon>

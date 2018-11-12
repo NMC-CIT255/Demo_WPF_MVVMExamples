@@ -5,6 +5,8 @@ VisualStudioVersion = 15.0.27130.2036
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Demo_WPF_RoutedCommands", "Demo_WPF_RoutedCommands\Demo_WPF_RoutedCommands.csproj", "{606F01E4-40EE-492C-A980-374238E670A0}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Demo_WPF_BasicMVVMApp", "Demo_WPF_BasicMVVMApp\Demo_WPF_BasicMVVMApp.csproj", "{7132B2F0-89C8-4ACB-8DF2-AE4ED060619A}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{606F01E4-40EE-492C-A980-374238E670A0}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{606F01E4-40EE-492C-A980-374238E670A0}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{606F01E4-40EE-492C-A980-374238E670A0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7132B2F0-89C8-4ACB-8DF2-AE4ED060619A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7132B2F0-89C8-4ACB-8DF2-AE4ED060619A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7132B2F0-89C8-4ACB-8DF2-AE4ED060619A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7132B2F0-89C8-4ACB-8DF2-AE4ED060619A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

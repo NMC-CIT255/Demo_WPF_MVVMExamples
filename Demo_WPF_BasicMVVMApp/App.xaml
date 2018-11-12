@@ -1,7 +1,7 @@
-﻿<Application x:Class="Demo_WPF_RoutedCommands.App"
+﻿<Application x:Class="Demo_WPF_BasicMVVMApp.App"
              xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
              xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-             xmlns:local="clr-namespace:Demo_WPF_RoutedCommands"
+             xmlns:local="clr-namespace:Demo_WPF_BasicMVVMApp"
              StartupUri="MainWindow.xaml">
     <Application.Resources>
          

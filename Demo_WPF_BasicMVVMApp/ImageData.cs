@@ -1,21 +1,31 @@
-﻿using System;
+﻿using Demo_WPF_BasicMVVMApp.Commands;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows.Input;
 
-namespace Demo_WPF_RoutedCommands
+namespace Demo_WPF_BasicMVVMApp
 {
     public class ImageData : INotifyPropertyChanged
     {
         double _zoom = 1.0;
+        string _imagePath;
+        ICommand _openImageFileCommand, _zoomCommand;
 
-        public string ImagePath { get; private set; }
+        public ICommand OpenImageFileCommand { get { return _openImageFileCommand; } }
+        public ICommand ZoomCommand { get { return _zoomCommand; } }
 
-        public ImageData(string path)
+        public string ImagePath
         {
-            ImagePath = path;
+            get { return _imagePath; }
+            set
+            {
+                _imagePath = value;
+                OnPropertyChanged("ImagePath");
+            }
         }
 
         public double Zoom
@@ -26,6 +36,12 @@ namespace Demo_WPF_RoutedCommands
                 _zoom = value;
                 OnPropertyChanged("Zoom");
             }
+        }
+
+        public ImageData()
+        {
+            _openImageFileCommand = new OpenImageFileCommand(this);
+            _zoomCommand = new ZoomCommand(this);
         }
 
         public event PropertyChangedEventHandler PropertyChanged;

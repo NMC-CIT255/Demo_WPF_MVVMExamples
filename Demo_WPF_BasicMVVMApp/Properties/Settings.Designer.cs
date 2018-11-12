@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace Demo_WPF_RoutedCommands.Properties
+namespace Demo_WPF_BasicMVVMApp.Properties
 {
 
 

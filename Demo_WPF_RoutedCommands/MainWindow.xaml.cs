@@ -14,7 +14,7 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 
-namespace Demo_WPF_MVVMExamples
+namespace Demo_WPF_RoutedCommands
 {
     /// <summary>
     /// Interaction logic for MainWindow.xaml
@@ -27,19 +27,6 @@ namespace Demo_WPF_MVVMExamples
         {
             InitializeComponent();
         }
-
-        //private void OnOpen(object sender, RoutedEventArgs e)
-        //{
-        //    var dlg = new OpenFileDialog
-        //    {
-        //        Filter = "Image Flies|*.jpg; *.png; *.bmp; *.gif"
-        //    };
-        //    if (dlg.ShowDialog() == true)
-        //    {
-        //        _image = new ImageData(dlg.FileName);
-        //        DataContext = _image;
-        //    }
-        //}
 
         private void OnIsImageExist(object sender, CanExecuteRoutedEventArgs e)
         {
@@ -67,6 +54,11 @@ namespace Demo_WPF_MVVMExamples
                 _image = new ImageData(dlg.FileName);
                 DataContext = _image;
             }
+        }
+
+        private void OnNormalZoom(object sender, ExecutedRoutedEventArgs e)
+        {
+            _image.Zoom = 1;
         }
     }
 }
